@@ -1,0 +1,25 @@
+{
+  "name": "roam-alpha-api-typing",
+  "version": "0.1.0",
+  "description": "A TypeScript library to provide types of Roam Research alpha API",
+  "main": "index.js",
+  "repository": "git@github.com:moreal/roam-alpha-api-typing.git",
+  "author": "moreal <dev.moreal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "typescript": "^4.2.4"
+  },
+  "husky": {
+    "hooks": {  
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": ["eslint --fix", "git add"]
+  }
+}
