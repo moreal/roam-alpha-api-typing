@@ -16,11 +16,14 @@
     "typescript": "^4.2.4"
   },
   "husky": {
-    "hooks": {  
+    "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.ts": ["eslint --fix", "git add"]
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
